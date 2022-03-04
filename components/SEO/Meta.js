@@ -23,14 +23,14 @@ export default function Meta() {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#E95420" />
       /* Search Engine */
-      <meta name="image" content="images/logos/fevicon.png" />
+      <meta name="image" content="images/logos/favicon.png" />
       /* Schema.org for Google */
       <meta itemProp="name" content="Bayram Dev Portfolio" />
       <meta
         itemProp="description"
         content="Bayram's (bayramdev) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme using Next.js and Tailwind CSS."
       />
-      <meta itemProp="image" content="images/logos/fevicon.png" />
+      <meta itemProp="image" content="images/logos/favicon.png" />
       /* Twitter */
       <meta name="twitter:card" content="summary" />
       <meta
@@ -55,7 +55,7 @@ export default function Meta() {
       <meta name="og:site_name" content="Bayram Personal Portfolio" />
       <meta name="og:locale" content="en_IN" />
       <meta name="og:type" content="website" />
-      <link rel="icon" href="images/logos/fevicon.svg" />
+      <link rel="icon" href="images/logos/favicon.png" />
       <link rel="apple-touch-icon" href="images/logos/logo.png" />
       <link
         rel="preload"
