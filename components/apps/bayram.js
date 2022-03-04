@@ -208,6 +208,158 @@ function About() {
   );
 }
 function Skills() {
+  const skillBadges = [
+    {
+      name: "c",
+      src: "https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white",
+    },
+    {
+      name: "cpp",
+      src: "https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white",
+    },
+    {
+      name: "css",
+      src: "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white",
+    },
+    {
+      name: "html",
+      src: "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white",
+    },
+    {
+      name: "java",
+      src: "https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white",
+    },
+    {
+      name: "javascript",
+      src: "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E",
+    },
+    {
+      name: "lua",
+      src: "https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white",
+    },
+    {
+      name: "python",
+      src: "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
+    },
+    {
+      name: "typescript",
+      src: "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white",
+    },
+    {
+      name: "bootstrap",
+      src: "https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white",
+    },
+
+    {
+      name: "dart",
+      src: "https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white",
+    },
+    {
+      name: "django",
+      src: "https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white",
+    },
+    {
+      name: "express",
+      src: "https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB",
+    },
+    {
+      name: "flask",
+      src: "https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white",
+    },
+    {
+      name: "flutter",
+      src: "https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white",
+    },
+    {
+      name: "golang",
+      src: "https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white",
+    },
+    {
+      name: "next",
+      src: "https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white",
+    },
+    {
+      name: "node",
+      src: "https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white",
+    },
+    {
+      name: "prisma",
+      src: "https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white",
+    },
+    {
+      name: "mongodb",
+      src: "https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white",
+    },
+    {
+      name: "mysql",
+      src: "https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white",
+    },
+    {
+      name: "postgresql",
+      src: "https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white",
+    },
+    {
+      name: "opencv",
+      src: "https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white",
+    },
+    {
+      name: "react",
+      src: "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
+    },
+    {
+      name: "redux",
+      src: "https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white",
+    },
+    {
+      name: "rust",
+      src: "https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white",
+    },
+    {
+      name: "socket",
+      src: "https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101",
+    },
+    {
+      name: "tailwind",
+      src: "https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white",
+    },
+    {
+      name: "jquery",
+      src: "https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white",
+    },
+    {
+      name: "keras",
+      src: "https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white",
+    },
+    {
+      name: "numpy",
+      src: "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white",
+    },
+    {
+      name: "pandas",
+      src: "https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white",
+    },
+    {
+      name: "scikit-learn",
+      src: "https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white",
+    },
+    {
+      name: "tensorflow",
+      src: "https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white",
+    },
+    {
+      name: "selenium",
+      src: "https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white",
+    },
+    {
+      name: "git",
+      src: "https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white",
+    },
+    {
+      name: "docker",
+      src: "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white",
+    },
+  ];
+
   return (
     <>
       <div className=" font-medium relative text-2xl mt-2 md:mt-4 mb-4">
@@ -226,7 +378,7 @@ function Skills() {
             {" "}
             My areas of expertise are{" "}
             <strong className="text-ubt-gedit-orange">
-              front-end development, React.js & javascript!
+              full stack web development, machine learning and automation!
             </strong>
           </div>
         </li>
@@ -235,103 +387,15 @@ function Skills() {
         </li>
       </ul>
       <div className="w-full md:w-10/12 flex mt-4">
-        <div className=" text-sm text-center md:text-base w-1/2 font-bold">
-          Languages & Tools
-        </div>
-        <div className=" text-sm text-center md:text-base w-1/2 font-bold">
-          Frameworks & Libraries
+        <div className=" text-sm text-center md:text-base w-full font-bold">
+          Skills
         </div>
       </div>
       <div className="w-full md:w-10/12 flex justify-center items-start font-bold text-center">
-        <div className="px-2 w-1/2">
-          <div className="flex flex-wrap justify-center items-start w-full mt-2">
-            <img
-              className="m-1"
-              src="https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat&logo=javascript&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A"
-              alt="vivek javascript"
-            />
-            <img
-              className="m-1"
-              src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white"
-              alt="vivek c++"
-            />
-            <img
-              className="m-1"
-              src="http://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=ffffff"
-              alt="vivek python"
-            />
-            <img
-              className="m-1"
-              src="https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white"
-              alt="vivek dart"
-            />
-            <a
-              href="https://www.google.com/search?q=is+html+a+language%3F"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                title="yes it's a language!"
-                className="m-1"
-                src="https://img.shields.io/badge/-HTML5-%23E44D27?style=flat&logo=html5&logoColor=ffffff"
-                alt="vivek HTML"
-              />
-            </a>
-            <img
-              src="https://img.shields.io/badge/-Sass-%23CC6699?style=flat&logo=sass&logoColor=ffffff"
-              alt="vivek SASS"
-              className="m-1"
-            />
-            <img
-              src="https://img.shields.io/badge/-Git-%23F05032?style=flat&logo=git&logoColor=%23ffffff"
-              alt="vivek git"
-              className="m-1"
-            />
-            <img
-              src="https://img.shields.io/badge/-Firebase-FFCA28?style=flat&logo=firebase&logoColor=ffffff"
-              alt="vivek firebase"
-              className="m-1"
-            />
-          </div>
-        </div>
-        <div className="px-2 flex flex-wrap items-start w-1/2">
-          <div className="flex flex-wrap justify-center items-start w-full mt-2">
-            <img
-              className=" m-1"
-              src="https://img.shields.io/badge/Next-black?style=flat&logo=next.js&logoColor=ffffff"
-              alt="vivek next"
-            />
-            <img
-              className=" m-1"
-              src="https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=ffffff"
-              alt="vivek react"
-            />
-            <img
-              className="m-1"
-              src="https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white"
-              alt="vivek flutter"
-            />
-            <img
-              className="m-1"
-              src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white"
-              alt="vivek tailwind css"
-            />
-            <img
-              src="https://img.shields.io/badge/-Nodejs-339933?style=flat&logo=Node.js&logoColor=ffffff"
-              alt="vivek node.js"
-              className="m-1"
-            />
-            <img
-              src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white"
-              alt="vivek jquery"
-              className="m-1"
-            />
-            <img
-              className="m-1"
-              src="https://img.shields.io/badge/Redux-593D88?style=flat&logo=redux&logoColor=white"
-              alt="vivek redux"
-            />
-          </div>
+        <div className="px-2 flex flex-wrap justify-center items-start w-full mt-2">
+          {skillBadges.map((badge) => (
+            <img className="m-1" src={badge.src} alt={`vivek ${badge.name}`} />
+          ))}
         </div>
       </div>
       <ul className=" tracking-tight text-sm md:text-base w-10/12 emoji-list mt-4">
@@ -339,10 +403,16 @@ function Skills() {
           <span> And of course,</span>{" "}
           <img
             className=" inline ml-1"
-            src="http://img.shields.io/badge/-Linux-0078D6?style=plastic&logo=linux&logoColor=ffffff"
+            src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"
             alt="vivek linux"
           />{" "}
-          <span>!</span>
+          (using
+          <img
+            className=" inline ml-1"
+            src="https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=for-the-badge"
+            alt="vivek arch linux"
+          />{" "}
+          )<span>!</span>
         </li>
       </ul>
     </>
