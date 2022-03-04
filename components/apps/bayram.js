@@ -421,75 +421,91 @@ function Skills() {
 function Projects() {
   const project_list = [
     {
-      name: "economist.com Unlocked",
-      date: "Mar 2021",
-      link: "https://github.com/vivek9patel/economist.com-unlocked",
+      name: "Graph Coordinate System",
+      date: "2021",
+      link: "https://github.com/bayramdev/graph-coordinate-system",
       description: [
-        "A chrome extension to read Paid Articles for Free & with no Ads, no subscription, no memberships!",
+        "Interactive coordinate system representation of a graph data structure written in Next.js",
       ],
-      domains: ["javascript", "chrome-extension"],
+      domains: ["graph-theory", "coordinate-system", "react", "next", "konva"],
     },
     {
-      name: "Flutter banking app",
-      date: "Jan 2021",
-      link: "https://github.com/vivek9patel/flutter-banking-app",
+      name: "Summary Generator",
+      date: "2021",
+      link: "https://github.com/bayramdev/turkish-summary-generator",
       description: [
-        "A Flutter & Firebase project for creating transactions between different Users and displaying the history of transactions done by all.",
+        "A machine learning summary generator website using word vectors and cosine similarity",
       ],
-      domains: ["flutter", "firestore", "dart", "firebase auth"],
+      domains: [
+        "natural-language-processing",
+        "cosine-similarity",
+        "artificial-intelligence",
+      ],
     },
     {
-      name: "CPU scheduling application",
-      date: "Dec 2020",
-      link: "https://github.com/vivek9patel/CPU-Scheduling-APP-React-Native",
-      description: [
-        "React Native Application to visualize the CPU Scheduling algorithms with different Processes and Animations with gannt chart.",
-      ],
-      domains: ["react-native", "javascript"],
+      name: "Django React App",
+      date: "2021",
+      link: "https://github.com/bayramdev/djangoreactapp",
+      description: ["React.js login web app with Python Django backend"],
+      domains: ["auth", "react", "django"],
     },
     {
-      name: "Meditech Healthcare WebApp",
-      date: "Nov 2020",
-      link: "https://github.com/vivek9patel/Meditech-Healthcare",
+      name: "Recursive Points",
+      date: "2021",
+      link: "https://github.com/bayramdev/recursive_points",
       description: [
-        "Developed Web Application to predict and diagnose diseases from x-ray images.",
+        "A graph displaying outcomes of the coordinate functions recursively",
       ],
-      domains: ["javascript", "html5", "sass", "firebase", "tensorflow"],
+      domains: ["pygame", "pygame", "recursion", "coordinate-system"],
     },
     {
-      name: "Problem Recommendation System",
-      date: "Sep 2020",
-      link: "https://github.com/vivek9patel/Improve-Codeforces",
+      name: "Anvil Compression Algorithm",
+      date: "2020",
+      link: "https://github.com/bayramdev/anvil",
       description: [
-        "Django web application to suggest practice problems from the areas in which the user struggles to get pass in code-forces.",
+        "A lossless text compression algorithm using Huffman and LZ77 algorithms with a GUI using Tkinter",
       ],
-      domains: ["django", "python", "codeforces-api", "javascript"],
+      domains: [
+        "compression",
+        "lossless-compression",
+        "huffman",
+        "lz77",
+        "tkinter",
+      ],
     },
     {
-      name: "Cleanliness Automation",
-      date: "Dec 2019",
-      link: "https://github.com/vivek9patel/CPU-Scheduling-APP-React-Native",
+      name: "MNIST PyGame",
+      date: "2020",
+      link: "https://github.com/bayramdev/mnist_pygame",
       description: [
-        "Developed Web Applications to automate Garbage collection and extraction systems for SSIP hackathon",
+        "A digit recognition app with tensorflow and pygame using an artificial intelligence (neural network) modal",
       ],
+      domains: [
+        "machine-learning",
+        "artificial-intelligence",
+        "classification",
+        "image-recognition",
+      ],
+    },
+    {
+      name: "Bead Arrays",
+      date: "2020",
+      link: "https://github.com/bayramdev/boncuk_dizilimi",
+      description: [
+        "A simulation on visualization of unique bead arrays in bracelet with Python Tkinter",
+      ],
+      domains: ["python", "gui"],
+    },
+    {
+      name: "Snake Game",
+      date: "2020",
+      link: "https://github.com/bayramdev/snake_game",
+      description: ["An OOP Snake Game Made with Python and Pygame"],
+      domains: ["python", "oop", "pygame"],
     },
   ];
 
-  const tag_colors = {
-    javascript: "yellow-300",
-    firebase: "red-600",
-    firestore: "red-500",
-    "chrome-extension": "yellow-400",
-    flutter: "blue-400",
-    dart: "blue-500",
-    "react-native": "purple-500",
-    html5: "pink-600",
-    sass: "pink-400",
-    tensorflow: "yellow-600",
-    django: "green-600",
-    python: "green-200",
-    "codeforces-api": "gray-300",
-  };
+  const tag_color = "gray-300";
 
   return (
     <>
@@ -530,7 +546,6 @@ function Projects() {
               <div className="flex flex-wrap items-start justify-start text-xs py-2">
                 {project.domains
                   ? project.domains.map((domain, index) => {
-                      let tag_color = tag_colors[domain];
                       return (
                         <span
                           key={index}
