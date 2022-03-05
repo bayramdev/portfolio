@@ -180,8 +180,8 @@ function About() {
         </li>
         <li className=" mt-3 list-time">
           {" "}
-          When I am not coding my next project, I like to spend my time surfing
-          on reddit, having thoughts on life, watching{" "}
+          When I am not coding my next project, I like to spend my time having
+          thoughts on life, watching{" "}
           <a
             href="https://www.youtube.com/channel/UC6nSFpj9HTCZ5t-N3Rm3-HA"
             target="_blank"
